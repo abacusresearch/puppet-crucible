@@ -9,7 +9,7 @@ class crucible (
   $java_home = undef,
   $java_opts = undef,
   Stdlib::Absolutepath $install_dir = '/opt/crucible',
-  Stdlib::Absolutepath $home_dir = undef,
+  Optional[Stdlib::Absolutepath] $home_dir = undef,
   Stdlib::Absolutepath $fisheye_inst = '/opt/crucible-data',
   Boolean $install_unzip = true,
   Boolean $install_wget = true,
